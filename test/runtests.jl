@@ -1,14 +1,9 @@
-using MyPkgDemo
-using Test
+using SafeTestsets
 
-@testset "MyPkgDemo.jl" begin
-    # Write your tests here.
-    @test MyPkgDemo.add_nums(1, 3) == 4
-    @test MyPkgDemo.add_nums(4, 3) == 7
-    @test MyPkgDemo.add_nums(7, 3) == 10
-    @test MyPkgDemo.add_nums(8, 3) == 11
+@safetestset "add_nums test set" begin
+    include("add_nums.jl")
+end
 
-    @test MyPkgDemo.add_nums(8, 3, 1) == 12
-    @test MyPkgDemo.add_nums(8, 3, 8) == 19
-    @test MyPkgDemo.add_nums(1, 4, 3) == 8
+@safetestset "cat_str test set" begin
+    include("cat_str.jl")
 end

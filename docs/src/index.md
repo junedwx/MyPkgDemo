@@ -1,12 +1,9 @@
-```@meta
-CurrentModule = MyPkgDemo
-```
-
 # MyPkgDemo
 
-```@index
-```
+## Installation
 
-```@autodocs
-Modules = [MyPkgDemo]
-```
+This is installation.
+
+
+
+

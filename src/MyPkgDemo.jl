@@ -1,25 +1,9 @@
 module MyPkgDemo
 
-"""
-Add numbers together.
-"""
-# Write your package code here.
-function add_nums end
+export add_nums
+export cat_str
 
-"""
-    add_nums(a, b)
-Add two numbers.
-"""
-function add_nums(a, b)
-    a+b
-end
-
-"""
-    add_nums(a, b ,c)
-Add three numbers.
-"""
-function add_nums(a, b, c)
-   a+b+c
-end
+include("add_nums.jl")
+include("cat_str.jl")
 
 end
